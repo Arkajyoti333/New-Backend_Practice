@@ -12,7 +12,7 @@ dotenv.config({
 const DataBaseConnecton=async()=>{
   try {
     const DbConnection=await mongoose.connect(`${EnvConfig.Mongodb_URI}/${Db_name}`);
-    //Dont use special character in mongo db string password if use make sure this special character is encoded in base64
+    //Dont use special character in mongo db string password if use make sure this special character is encoded in base64.
    
     const hostId=DbConnection.connection.host;
     console.log(`Your Mongodb Connecton Host Id is -> ${hostId}`);

@@ -1,8 +1,8 @@
 import express from "express";
 import cookieParser from "cookie-parser";
 import cors from "cors";
-import { Const_data_Limits } from "./constant";
-import EnvConfig from "./config/config";
+import { Const_data_Limits } from "./constant.js";
+import EnvConfig from "./config/config.js";
 
 
 
